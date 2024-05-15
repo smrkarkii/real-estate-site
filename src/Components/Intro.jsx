@@ -3,7 +3,7 @@ import React from "react";
 const Intro = () => {
   return (
     <div>
-      <div className="pb-10 h-[500px] ">
+      <div className="pb-10 h-[500px] " id="intro">
         <div>
           <div className="text-white  text-4xl sm:text-5xl text-center pt-24 mx-auto font-bold  w-96 md:text-[70px] md:w-[1000px] ">
             Find Your Dream Home

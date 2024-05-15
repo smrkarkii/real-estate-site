@@ -3,7 +3,7 @@ import React from "react";
 const Properties = () => {
   return (
     <div>
-      <div className=" bg-[#4b60a1] h-64  ">
+      <div className=" bg-[#4b60a1] h-64   " id="properties">
         <h1 className="font-bold text-2xl text-white text-center  pt-[100px]">
           Properties
         </h1>

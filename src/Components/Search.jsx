@@ -2,7 +2,10 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="bg-white w-[700px] mt-[-30px] mx-auto rounded pl-10 pt-5 flex flex-col md:flex-row justify-left gap-5 h-24 border-[#4b60a1]">
+    <div
+      className="bg-white w-[700px] mt-[-30px] mx-auto rounded pl-10 pt-5 flex flex-col md:flex-row justify-left gap-5 h-24 border-[#4b60a1]"
+      id="search"
+    >
       <div className="flex flex-col">
         <h1 className="text-[#4b60a1] font-bold">Locations</h1>
         <input

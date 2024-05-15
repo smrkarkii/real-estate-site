@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
 import Search from "./Components/Search";
@@ -9,22 +10,27 @@ import mainphoto from "./img/mainphoto.png";
 
 const App = () => {
   return (
-    <div>
-      <div
-        style={{
-          backgroundImage: `url(${mainphoto})`,
-          backgroundSize: "cover",
-        }}
-      >
+    <Router>
+      <div>
+        <div
+          style={{
+            backgroundImage: `url(${mainphoto})`,
+            backgroundSize: "cover",
+          }}
         >
-        <Navbar />
-        <Intro />
+          <Navbar />
+          <Intro />
+        </div>
+        <Search />
+        <PropertiesbyArea />
+        <Routes>
+          <Route path="/properties" element={<Properties />} />
+          <Route path="/home" element={<App />} />
+          <Route path="/footer" element={<Footer />} />
+        </Routes>
+        <Footer />
       </div>
-      <Search />
-      <PropertiesbyArea />
-      <Properties />
-      <Footer />
-    </div>
+    </Router>
   );
 };
 
