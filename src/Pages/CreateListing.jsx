@@ -3,7 +3,9 @@ import React from "react";
 const CreateListing = () => {
   return (
     <main className="p-3 max-w-6xl mx-auto">
-      <h1 className="text-3xl font-semibold  w-96 pb-10 ">Create a Listing</h1>
+      <h1 className="text-3xl font-semibold  w-96 pb-10 ">
+        Create a Listing for Rent
+      </h1>
       <form
         action="
       "
@@ -98,7 +100,7 @@ const CreateListing = () => {
               />
               <span>Rent </span>
             </div>
-            <div>
+            {/* <div>
               <input
                 type="checkbox"
                 id="sale"
@@ -106,6 +108,15 @@ const CreateListing = () => {
                 className="w-5 "
               />
               <span>Sale </span>
+            </div> */}
+            <div>
+              <input
+                type="checkbox"
+                id="Flat"
+                placeholder="Furnished"
+                className="w-5 "
+              />
+              <span>Flat </span>
             </div>
             <div>
               <input
@@ -115,15 +126,6 @@ const CreateListing = () => {
                 className="w-5 "
               />
               <span>House </span>
-            </div>
-            <div>
-              <input
-                type="checkbox"
-                id="Flat"
-                placeholder="Furnished"
-                className="w-5 "
-              />
-              <span>Flat </span>
             </div>
           </div>
         </div>

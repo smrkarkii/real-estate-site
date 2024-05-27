@@ -37,10 +37,13 @@ const Navbar = () => {
           {dropdown && (
             <ul className="absolute left-0 mt-2 w-48 bg-white text-black shadow-lg rounded-lg z-10">
               <li className="p-2 border-b border-gray-300 hover:bg-gray-200">
-                <Link to="/create-listing">House & Flat</Link>
+                <Link to="/create-listing">For rent: House | Flat</Link>
               </li>
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/create-listing/land">Land</Link>
+                <Link to="/create-listing/land">For sale : House</Link>
+              </li>
+              <li className="p-2 hover:bg-gray-200">
+                <Link to="/create-listing/land">For sale : Land</Link>
               </li>
             </ul>
           )}

@@ -12,40 +12,28 @@ import HouseForSale from "./Components/HouseForSale";
 import Error from "./Components/Error";
 import Test from "./Components/Test";
 import CreateListing from "./Pages/CreateListing";
+import Home from "./Pages/Home";
+import MainLayout from "./Components/Layout";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <div> */}
-      <div
-        style={{
-          backgroundImage: `url(${mainphoto})`,
-          backgroundSize: "cover",
-        }}
-      >
-        <Navbar />
-        {/* <Intro /> */}
-        {/* </div> */}
-        {/* <Search /> */}
-        {/* <FlatForRent />
+      <MainLayout>
+        <Routes>
+          {/* <Route path="/Home" element={<Home />} /> */}
+          <Route path="/properties" element={<Properties />} />
+          <Route path="/FlatForRent" element={<FlatForRent />} />
+          <Route path="/LandForSale" element={<LandForSale />} />
+          <Route path="/HouseForSale" element={<HouseForSale />} />
+          <Route path="/agent" element={<Intro />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="/contact" element={<Footer />} />
+          <Route path="/create-listing" element={<CreateListing />} />
 
-        <HouseForSale />
-        <LandForSale />
-        <Footer /> */}
-      </div>
-      <Routes>
-        {/* <Route path="/Home" element={<Home />} /> */}
-        <Route path="/properties" element={<Properties />} />
-        <Route path="/FlatForRent" element={<FlatForRent />} />
-        <Route path="/LandForSale" element={<LandForSale />} />
-        <Route path="/HouseForSale" element={<HouseForSale />} />
-        <Route path="/agent" element={<Intro />} />
-        <Route path="/test" element={<Test />} />
-        <Route path="/contact" element={<Footer />} />
-        <Route path="/create-listing" element={<CreateListing />} />
-
-        <Route path="/about" element={<Intro />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+          <Route path="/about" element={<Intro />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </MainLayout>
     </BrowserRouter>
   );
 };
