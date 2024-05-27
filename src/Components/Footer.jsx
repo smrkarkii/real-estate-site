@@ -2,18 +2,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-400  " id="footer">
+    <footer className="bg-blue-400 overflow-hidden " id="footer">
       <div className="border border-white w-screen"> </div>
-      <div className="grid grid-cols-3 justify-items-center pt-7 ">
-        <ul className="flex flex-col text-white">
-          <h2 className="text-xl font-bold">About</h2>
-          <li>About Us</li>
-          <li> Our Charter</li>
-          <li>Stats</li>
-          <li>Press</li>
-          <li>Jobs</li>
+      <div className="grid grid-cols-3 justify-items-center pt-7 gap-x-4 ">
+        <ul className="flex flex-col w-32 text-white">
+          <h2 className="text-xl font-bold ">Discover</h2>
+          <li>Land For Sale</li>
+          <li> Flat For Rent</li>
+          <li>House For Rent</li>
         </ul>
-        <ul className="flex flex-col text-white">
+        <ul className="flex flex-col text-white w-32">
           <h2 className="text-xl font-bold">Support</h2>
           <li>Help Center</li>
           <li> Our Rules</li>
@@ -21,17 +19,13 @@ const Footer = () => {
           <li>Resources</li>
           <li>Forward Funds</li>
         </ul>
-        <ul className="flex flex-col text-white">
-          <h2 className="text-xl font-bold">More</h2>
-          <li>Career </li>
-          <li> Our Charter</li>
-          <li>Stats</li>
-          <li>Press</li>
-
-          <li>Jobs</li>
+        <ul className="flex flex-col text-white w-32">
+          <h2 className="text-xl font-bold">Contact Us</h2>
+          <li>9777777777 </li>
+          <li> nepalgharjagga@gmail.com</li>
         </ul>
       </div>
-      <div className="container pt-10 mx-auto flex flex-col  justify-center gap-10 items-center">
+      <div className=" pt-10 mx-auto flex flex-col  justify-center gap-10 items-center">
         <ul className="flex gap-8 ">
           <li>
             <a
@@ -66,12 +60,12 @@ const Footer = () => {
           {/* Add more social media links as needed */}
         </ul>
         <ul className="text-white flex flex-col text-xl gap-4">
-          <li>
+          {/* <li>
             <i className="fas fa-envelope "></i> info@example.com
           </li>
           <li>
             <i className="fas fa-phone"></i> +1 234 567 890
-          </li>
+          </li> */}
           {/* Add more contact information as needed */}
         </ul>
       </div>
