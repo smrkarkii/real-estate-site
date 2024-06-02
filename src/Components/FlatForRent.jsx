@@ -22,7 +22,7 @@ const FlatForRent = () => {
         id="flatforrent "
       >
         <h1 className="font-bold text-2xl text-black text-left ">
-          Flat For Rent
+          Flat and House For Rent
         </h1>
         <button
           className="bg-[#4b60a1] rounded text-white w-24 h-9 absolute right-5 top-24 "
@@ -51,8 +51,8 @@ const FlatForRent = () => {
                 Rs.{property.price}
               </p>
               <div className="flex mt-2">
-                <FaBed className="mr-2" />
-                <TbToolsKitchen3 />
+                {/* <FaBed className="mr-2" />
+                <TbToolsKitchen3 /> */}
               </div>
               <p className="text-gray-400 text-extra-light">{property.time}</p>
             </div>

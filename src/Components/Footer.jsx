@@ -1,28 +1,30 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <footer className="bg-blue-400 overflow-hidden " id="footer">
+    <footer className="bg-[#4b60a1] overflow-hidden " id="footer">
       <div className="border border-white w-screen"> </div>
-      <div className="grid grid-cols-3 justify-items-center pt-7 gap-x-4 ">
-        <ul className="flex flex-col w-32 text-white">
+      <div className="grid grid-cols-2 justify-items-center pt-7  w-[60%] mx-auto text-center">
+        <ul className="flex flex-col  text-white">
           <h2 className="text-xl font-bold ">Discover</h2>
-          <li>Land For Sale</li>
-          <li> Flat For Rent</li>
-          <li>House For Rent</li>
+          <li>
+            <a href="#land-for-sale">Land For Sale</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#flat-for-rent"> Flat and house for rent</a>
+          </li>
+          <li>
+            <a href="#house-for-sale">House For Sale</a>
+          </li>
         </ul>
-        <ul className="flex flex-col text-white w-32">
-          <h2 className="text-xl font-bold">Support</h2>
-          <li>Help Center</li>
-          <li> Our Rules</li>
-          <li>Creator</li>
-          <li>Resources</li>
-          <li>Forward Funds</li>
-        </ul>
-        <ul className="flex flex-col text-white w-32">
+
+        <ul className="flex flex-col text-white ">
           <h2 className="text-xl font-bold">Contact Us</h2>
-          <li>9777777777 </li>
-          <li> nepalgharjagga@gmail.com</li>
+          <li>9766766575 </li>
+          <li> nepaliproperty@gmail.com</li>
         </ul>
       </div>
       <div className=" pt-10 mx-auto flex flex-col  justify-center gap-10 items-center">

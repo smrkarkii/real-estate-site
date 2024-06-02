@@ -42,7 +42,7 @@ const HouseForSale = () => {
           >
             <img
               className="relative backdrop-filter w-80 h-40"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdv6CRGoKZOzMaBZjpQIYReVKBAIdie59ZRdDSoDHiA&s"
+              src={property.image}
               alt={property.title}
             />
             <div className="ml-5">
@@ -52,8 +52,8 @@ const HouseForSale = () => {
                 Rs.{property.price}
               </p>
               <div className="flex mt-2">
-                <FaBed className="mr-2" />
-                <TbToolsKitchen3 />
+                {/* <FaBed className="mr-2" />
+                <TbToolsKitchen3 /> */}
               </div>
               <p className="text-gray-400 text-extra-light">{property.time}</p>
             </div>

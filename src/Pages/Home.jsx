@@ -22,10 +22,19 @@ const Home = () => {
       </div>
 
       <Search />
-      <FlatForRent />
-      <HouseForSale />
-      <LandForSale />
-      <Footer />
+      <section id="flat-for-rent">
+        <FlatForRent />
+      </section>
+      <section id="house-for-sale">
+        <HouseForSale />
+      </section>
+      <section id="land-for-sale">
+        <LandForSale />
+      </section>
+      <section id="footer">
+        {" "}
+        <Footer />
+      </section>
     </div>
   );
 };

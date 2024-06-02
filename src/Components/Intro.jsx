@@ -9,7 +9,7 @@ const Intro = () => {
             Find Your Dream Home
           </div>
           <p className="text-white  mx-auto pt-12 text-center max-w-[800px] w-96 text-sm md:w-[900px] md:text-lg">
-            Connect with us form top notch service and finding your dream homes.
+            Connect with us for top notch service and finding your dream homes.
           </p>
         </div>
       </div>

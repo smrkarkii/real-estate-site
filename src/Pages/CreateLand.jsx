@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MainLayout from "../Components/Layout";
 
 //for flat and house rent
-const CreateListing = () => {
+const CreateLand = () => {
   const [files, setFiles] = useState("");
   console.log(files);
 
@@ -24,8 +24,8 @@ const CreateListing = () => {
   return (
     <MainLayout>
       <main className="p-3 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-semibold  pb-10 ">
-          Create a Listing for Flat and House Rent
+        <h1 className="text-3xl font-semibold   pb-10 ">
+          Create a Listing for Land Sale
         </h1>
         <form
           action="
@@ -183,4 +183,4 @@ const CreateListing = () => {
   );
 };
 
-export default CreateListing;
+export default CreateLand;

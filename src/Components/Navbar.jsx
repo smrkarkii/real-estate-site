@@ -40,20 +40,20 @@ const Navbar = () => {
                 <Link to="/create-listing">For rent: House | Flat</Link>
               </li>
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/create-listing/land">For sale : House</Link>
+                <Link to="/create-listing-house">For sale : House</Link>
               </li>
               <li className="p-2 hover:bg-gray-200">
-                <Link to="/create-listing/land">For sale : Land</Link>
+                <Link to="/create-listing-land">For sale : Land</Link>
               </li>
             </ul>
           )}
         </li>
 
         <li className="p-12">
-          <Link to="/properties">Properties</Link>
+          <a href="#flat-for-rent">Properties</a>
         </li>
         <li className="p-12">
-          <Link to="/contact">Contact Us</Link>
+          <a href="#footer">Contact Us</a>
         </li>
       </ul>
       <div className="fixed right-2 md:hidden" onClick={handleNav}>
@@ -67,7 +67,7 @@ const Navbar = () => {
       >
         <ul className="pt-24">
           <li className="p-2 border-b border-gray-300">
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li className="p-2 border-b border-gray-300">
             <Link to="/about">About Us</Link>
