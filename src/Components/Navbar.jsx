@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiFillHome, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -22,9 +23,7 @@ const Navbar = () => {
         <li className="p-12">
           <Link to="/">Home</Link>
         </li>
-        <li className="p-12">
-          <Link to="/about">About Us</Link>
-        </li>
+
         {/* <li className="p-12">
           <Link to="/create-listing">List your property</Link>
         </li> */}
@@ -48,12 +47,16 @@ const Navbar = () => {
             </ul>
           )}
         </li>
-
         <li className="p-12">
-          <a href="#flat-for-rent">Properties</a>
+          <HashLink smooth to="/#flat-for-rent">
+            Properties
+          </HashLink>{" "}
+          {/* Use HashLink */}
         </li>
         <li className="p-12">
-          <a href="#footer">Contact Us</a>
+          <HashLink smooth to="/#footer">
+            Contact Us
+          </HashLink>
         </li>
       </ul>
       <div className="fixed right-2 md:hidden" onClick={handleNav}>
@@ -69,17 +72,17 @@ const Navbar = () => {
           <li className="p-2 border-b border-gray-300">
             <Link to="/home">Home</Link>
           </li>
-          <li className="p-2 border-b border-gray-300">
+          {/* <li className="p-2 border-b border-gray-300">
             <Link to="/about">About Us</Link>
-          </li>
-          <li className="p-2 border-b border-gray-300">
+          </li> */}
+          {/* <li className="p-2 border-b border-gray-300">
             <Link to="/agent">Our Agents</Link>
+          </li> */}
+          <li className="p-2 border-b border-gray-300">
+            <HashLink to="/#flat-for-rent">Properties</HashLink>
           </li>
           <li className="p-2 border-b border-gray-300">
-            <Link to="/properties">Properties</Link>
-          </li>
-          <li className="p-2 border-b border-gray-300">
-            <Link to="/contact">Contact Us</Link>
+            <HashLink to="/#footer">Contact Us</HashLink>
           </li>
         </ul>
       </div>

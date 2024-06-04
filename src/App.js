@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
 import Search from "./Components/Search";
@@ -16,9 +16,10 @@ import CreateHouse from "./Pages/CreateHouse";
 import CreateLand from "./Pages/CreateLand";
 import Home from "./Pages/Home";
 import MainLayout from "./Components/Layout";
+
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* <MainLayout> */}
       <Routes>
         {/* <Route path="/Home" element={<Home />} /> */}
@@ -37,14 +38,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
 
-        <Route path="/Land-for-sale" component={LandForSale} />
-        <Route path="/House-for-sale" component={HouseForSale} />
-        <Route path="/Flat-for-rent" component={FlatForRent} />
         <Route path="*" element={<Error />} />
       </Routes>
 
       {/* </MainLayout> */}
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
